@@ -21,10 +21,21 @@ function App() {
     }
   ])
 
-return (
+return <div className="app">
+ <h1>Lista de Tarefas</h1>
+ <div className="todo-list">
+    {todos.map((todo)=> (
+      <div className="todo">
+        <div className="content">
+          <p>{todo.text}</p>
+          <p className="category"></p>
+          <p className="category">({todo.category})</p>
+        </div>
+      </div>
+    ))}
+ </div>
 
-<div>Olá React</div>
-  )
+</div>;
 }
 
-export default App
+export default App;
