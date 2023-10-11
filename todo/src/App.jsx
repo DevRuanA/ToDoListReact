@@ -21,6 +21,7 @@ function App() {
     }
   ])
 
+
 return <div className="app">
  <h1>Lista de Tarefas</h1>
  <div className="todo-list">
@@ -28,10 +29,13 @@ return <div className="app">
       <div className="todo">
         <div className="content">
           <p>{todo.text}</p>
-          <p className="category"></p>
           <p className="category">({todo.category})</p>
         </div>
-      </div>
+      <div>
+        <button>Completar</button>
+        <button>x</button>
+        </div>
+        </div>
     ))}
  </div>
 
