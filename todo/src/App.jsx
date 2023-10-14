@@ -45,3 +45,5 @@ return <div className="app">
 }
 
 export default App;
+
+console.log
